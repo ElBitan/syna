@@ -1,0 +1,26 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+ header{
+ background-image:url("https://upload.wikimedia.org/wikipedia/commons/0/08/Ghriba3.jpg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+
+
+;
+}
+#tit{text-align: center;
+font-size:30px;
+color:greenyellow;}
+#dr{text-align: right;}
+h1 #dr{text-align: right;}
+#m{text-align: center;}
+h1{font-size:15px;}
+td{color:black; 
+font-family: 'Kdam Thmor Pro', sans-serif;
+}
+ table {
+background-color:rgba(255, 252, 252, 0.5);
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: black;
+  border: 5px solid greenyellow;
+}
