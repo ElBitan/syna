@@ -1,26 +1,178 @@
- @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
- header{
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+body{background-color:green;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header1{
+ border-bottom: 1px solid whie;
+   
+}
+
+.navbar {
+Background-color:green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: black;
+}
+#h{
+border: 10px solid green;
  background-image:url("https://upload.wikimedia.org/wikipedia/commons/0/08/Ghriba3.jpg");
 background-size: 100% 100%;
 background-repeat: no-repeat;
-
-
-;
 }
 #tit{text-align: center;
 font-size:30px;
 color:greenyellow;}
 #dr{text-align: right;}
 h1 #dr{text-align: right;}
-#m{text-align: center;}
+#m{text-align: center;
+font-size:15px;
+}
 h1{font-size:15px;}
 td{color:black; 
 font-family: 'Kdam Thmor Pro', sans-serif;
 }
- table {
+#h1{
 background-color:rgba(255, 252, 252, 0.5);
   table-layout: fixed;
   width: 100%;
   border-collapse: black;
-  border: 5px solid greenyellow;
+  border: 10px double greenyellow;
 }
+
+#bon{
+ border: 2px solid red;
+  padding: 10px;
+  border-radius: 10px 100px / 120px;
+width:100px;
+background:blue;
+display: block; margin: 0 auto;
+
+color:black;}
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+#current_date{color:white;
+background-color:green;
+text-align:left;
+float:left;
+font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#current_datea{
+background-color:green;
+color:white;
+position: absolute;
+top: 50px; left: 350px;
+font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#horloge{
+background-color:green;
+color:white;
+  height: 10px;
+   display: flex;
+    align-items: center;
+  justify-content: center;
+
+}
+#time {
+background-color:green;
+color:white;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+display: flex;
+    align-items: center;
+  justify-content: center;
+}
+.header2{background-color:green;}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: green;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+ 
