@@ -26,8 +26,80 @@
 </style>
   </head>
 <body>
- <header>
-<table>
+
+ <header class="header1" style="background-color:green;">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">synagogue djerba</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="https://coursdetorah.tk/" class="nav-link">coursdetorah</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://coursdetorah.tk/coursenarabe.html" class="nav-link">cours de torah en arabe </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://coursdetorah.tk/horaires%20de%20chabbath.html" class="nav-link">horaires de chabbath </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+<i class="fa-solid fa-arrows-rotate"></i>
+</a>
+
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+<div class="header2" style="background-color:green;">
+<body onload=showDate();> 
+ <span id='horloge'></span>
+<div id="current_date"></p>
+<script>
+date = new Date();
+year = date.getFullYear()+3260;
+month = date.getMonth() +2;
+day = date.getDate()+1;
+document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+</script>
+
+<div id="current_datea">
+<script>
+date = new Date().toLocaleDateString();
+document.write(date);
+</script>
+</div>
+
+
+<script>
+  function refresh(){
+             var t = 1000; // rafraîchissement en millisecondes
+             setTimeout('showDate()',t)
+         }
+         
+         function showDate() {
+             var date = new Date()
+             var h = date.getHours();
+             var m = date.getMinutes();
+             var s = date.getSeconds();
+             if( h < 10 ){ h = '0' + h; }
+             if( m < 10 ){ m = '0' + m; }
+             if( s < 10 ){ s = '0' + s; }
+             var time = h + ':' + m + ':' + s
+             document.getElementById('horloge').innerHTML = time;
+             refresh();
+          }
+</script>
+</div>
+</div>
+<br style="background-color:green;">
+<div>
+ <header id="h">
+<h1 id="bon" style="text-align:center;">שלח לך</h1>
+<table id="h1">
 <tr>
 <h1 id="tit">Semaine - חול</h1>
 <td><h1>Chaharit</h1> </td>
@@ -56,7 +128,7 @@
 </tr>
 </table>
 
-<table>
+<table id="h1">
 <tr>
 <h1 id="tit">Semaine - חול</h1>
 <td><h1>Chaharit</h1> </td>
@@ -83,9 +155,17 @@
 <td id="m">7:00-8:00-9:00</td>
 <td id="dr"> <h1 id="dr">שחרית </h1> </td>
 </tr>
-</header>
 </table>
+<br>
+<iframe style="display: block; margin: 0 auto; border: 2px solid red;
+  padding: 10px;
+background:blue;" width="90%" height="315" src="https://www.youtube.com/embed/yAwllkBMuRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br><br><br><br><br><br><br><br>
 </header>
-    <script src="app.js"></script>
+
+ <script src="app.js"></script>
+
+ <script src="index.js"></script>
+
 </body>
 </html>
